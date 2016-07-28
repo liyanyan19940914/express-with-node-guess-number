@@ -34,10 +34,6 @@ request(getAnswer, (err, res, body) => {
                 }
             }
             request(compare, (err, res, body)=> {
-                // if (body.length>4) {
-                //     console.log('Cannot input duplicate numbers!');
-                //     console.log(`Please input your number(${chances}):`);
-                // }
                 if (body === '4A0B') {
                     console.log('Congratulations!');
                     process.exit();
